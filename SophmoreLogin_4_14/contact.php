@@ -75,7 +75,7 @@ $stmt->close();
           <summary class="collapse">Jessica Cortes</summary>
           <div class="info">
               <div a="email">Email: jcortes@oakland.edu</div>
-              <p>Oakland University sophomore majoring in Computer Science.</p>
+              <p>Oakland University junior majoring in Computer Science.</p>
           </div>
       </details>
       <details>
