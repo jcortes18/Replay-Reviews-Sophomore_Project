@@ -1,0 +1,717 @@
+body {
+    font-family: Arial, helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+#navbar {
+    background-color: #333;
+    color: #fff;
+}
+
+#navbar ul {
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+}
+
+#navbar li {
+    display: inline;
+    font-size: 18px;
+    padding-right: 15px;
+}
+#navbar a{
+  color: white ;
+  text-decoration: none;
+}
+
+#main-header {
+    background-image: url('blankmarquee.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    padding: 175px;
+    background-color: black;
+    color: black;
+    text-align: center;
+}
+
+#main-header h1 {
+    text-shadow: 5px 5px 10px gold;
+    font-size: 70px;
+    padding-top: 100px;
+}
+
+#main-header h2 {
+    text-shadow: 5px 5px 10px gold;
+    font-size: 55px;
+    padding-top: 115px;
+}
+#main-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/*
+********************************************************************************************
+search bar CSS
+********************************************************************************************
+*/
+
+#search-bar {
+    padding-bottom: 50px;
+}
+
+.search-cont {
+    text-align: center;
+}
+
+#search-bar input[type="text"] {
+    width: 30%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 40px;
+    padding: 8px 10px 8px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#search-bar input[type="text"]:focus {
+    width: 70%;
+}
+
+
+/*
+********************************************************************************************
+Movies Games and TV buttons CSS 
+********************************************************************************************
+*/
+
+.search_movies,
+.search_games,
+.search_TV {
+    opacity: .7;
+    background-color: #ddd;
+    position: relative;
+    padding: 20px 0;
+    display: inline-block;
+    font-size: 27px;
+    width: 23%;
+    border: 2px black solid;
+    border-radius: 30px
+}
+
+.search_movies:hover,
+.search_games:hover,
+.search_TV:hover {
+    background-color: lawngreen;
+    opacity: .8;
+    cursor: pointer;
+    transition: .4s;
+}
+
+search_movies.selected {
+    background-color: lawngreen;
+    opacity: .8;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+label {
+    opacity: .7;
+    background-color: #ddd;
+    position: relative;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 27px;
+    width: 23%;
+    border: 2px black solid;
+    border-radius: 20px;
+}
+
+input[type="radio"]:hover + label {
+    opacity: 1;
+    background-color: rgba( 88, 248, 157);
+    transition: .4s;
+}
+
+input[type="radio"]:checked + label {
+    opacity: 1;
+    background-color: rgba( 88, 248, 157);
+    transition: .4s;
+}
+
+
+/*
+********************************************************************************************
+CSS for the movies that popup after searching including details button
+********************************************************************************************
+*/
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+col-md-3 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.btn,
+.btn-primary,
+.btn-default {
+    padding: 10px;
+    color: black;
+    text-align: center;
+    background-color: #EEE;
+    border: 2px solid #000;
+    border-radius: 5px;
+    overflow: auto;
+    font: 700 13px/40px 'Open Sans', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    animation: glow 1s ease-in-out infinite alternate;
+    padding-right: 25px;
+}
+
+.btn:hover span:after {
+    animation: glowback 1s ease-in-out infinite alternate;
+    opacity: 1;
+    right: 0;
+}
+
+.btn-primary:hover,
+.btn-default:hover {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.search_wrapper {
+    padding-top: 1%;
+    text-align: center;
+}
+
+#titles img,
+#titles img {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+img {
+    page-break-inside: avoid
+}
+
+h5 {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 90%;
+}
+
+#titles .col-md-3 .well {
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    width: 210px;
+    height: 390px;
+    overflow: hidden;
+    animation: fade 1s linear;
+}
+
+#titles {
+    padding: 1%;
+}
+
+#titles .col-md-3 img {
+    width: 90%;
+    height: 60%;
+}
+
+.col-md-3 {
+    padding: 1%;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    text-align: center;
+}
+
+.col-md-3:hover {
+    transform: scale(1.07);
+}
+/*
+*******************************************************************************************
+Movie and TV details page CSS
+********************************************************************************************
+*/
+
+.detail_poster{
+  float: left;
+  width: 40%;
+  height: inherit;
+  box-sizing: border-box;
+  overflow: auto;
+
+}
+.detail_poster img{
+width:100%;
+	height:auto;
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-top: 40px;
+
+}
+.details_list{
+  float: right;
+  width: 60%;
+  height: inherit;
+  box-sizing: border-box;
+  margin-top: 70px;
+  padding-left: 10px;
+}
+.details_list h1{
+  text-align: left;
+}
+.details_list ul{
+  padding-left: 0px;
+}
+.details_list h3{
+  text-align: left;
+}
+.details_list p{
+  text-align: left;
+  margin-right: 10px;
+}
+.list-group-item {
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style: none;
+  text-align: left;
+}
+.list-group{
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+.well{
+  text-align: left;
+}
+#site_buttons{
+  text-align: center;
+}
+
+
+/*
+*******************************************************************************************
+Details page CSS
+********************************************************************************************
+*/
+
+#movie-container {
+    padding: 2%;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#movie-details {}
+
+.details-well {}
+/************************************************************************
+comment section css
+*************************************************************************/
+.comment-form-container {
+    margin: auto;
+    width: 80%;
+	background: #F0F0F0;
+	border: #e0dfdf 1px solid;
+	padding: 20px;
+	border-radius: 2px;
+}
+#frm-comment {
+    
+}
+
+.input-row {
+    width: 95%;
+	margin-bottom: 20px;
+}
+
+.input-field {
+	width: 100%;
+	border-radius: 2px;
+	padding: 10px;
+	border: #e0dfdf 1px solid;
+}
+
+.btn-submit {
+	padding: 10px 20px;
+	background: #333;
+	border: #1d1d1d 1px solid;
+	color: #f0f0f0;
+	font-size: 0.9em;
+	width: 100px;
+	border-radius: 2px;
+    cursor:pointer;
+}
+.comment-row {
+	border-bottom: #e0dfdf 1px solid;
+	margin-bottom: 15px;
+	padding: 15px;
+}
+
+.outer-comment {
+	background: #F0F0F0;
+	padding: 20px;
+	border: #dedddd 1px solid;
+}
+
+span.commet-row-label {
+	font-style: italic;
+}
+
+span.posted-by {
+	color: #09F;
+}
+
+.comment-info {
+	font-size: 0.8em;
+}
+.comment-text {
+    margin: 10px 0px;
+}
+.btn-reply {
+    font-size: 0.8em;
+    text-decoration: underline;
+    color: #888787;
+    cursor:pointer;
+}
+#comment-message {
+    margin-left: 20px;
+    color: #189a18;
+    display: none;
+}
+/*
+*******************************************************************************************
+Animations
+********************************************************************************************
+*/
+
+@keyframes fade {
+    100% {
+        transform: translateY(0%);
+        opacity: 1
+    }
+    75% {
+        transform: translateY(25%);
+        opacity: .75;
+    }
+    50% {
+        transform: translateY(50%);
+        opacity: .5;
+    }
+    25% {
+        transform: translateY(75%);
+        opacity: 25;
+    }
+    0% {
+        transform: translateY(100%);
+        opacity: 0
+    }
+}
+
+@keyframes glow {
+    from {
+        color: black;
+        text-shadow: 0 0 10px #FFF, 0 0 10px #FFF, 0 0 20px #FFF, 0 0 40px #FFF, 0 0 60px #FFF, 0 0 80px #FFF, 0 0 100px #FFF;
+    }
+    to {
+        color: #777;
+        text-shadow: 0 0 10px #DDD, 0 0 30px #DDD, 0 0 50px #DDD, 0 0 70px #DDD, 0 0 90px #DDD, 0 0 110px #DDD, 0 0 120px #DDD;
+    }
+}
+
+@keyframes glowback {
+    from {
+        color: black;
+        text-shadow: 0 0 0px #000, 0 0 10px #000, 0 0 20px #000, 0 0 40px #000, 0 0 60px #000, 0 0 80px #000, 0 0 100px #000;
+    }
+    to {
+        color: black;
+        text-shadow: 0 0 10px #000, 0 0 30px #000, 0 0 50px #000, 0 0 70px #000, 0 0 90px #000, 0 0 110px #000, 0 0 120px #000;
+    }
+}
+
+/*
+*******************************************************************************************
+About page CSS
+********************************************************************************************
+*/
+#about{
+	text-align:left;
+}
+.block{
+  float: left;
+  width: 50%;
+  height: 250px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  box-sizing: border-box;
+}
+#apiReferences ul{
+  padding: 0;
+  list-style: none;
+
+}
+#axiosRef ul{
+  padding: 0;
+  list-style: none;
+}
+#sitesHeader h2{
+  text-align: left;
+}
+.sitesWrap{
+  padding: 10px;
+  padding-left: 140px;
+  margin-left: auto;
+  text-align: left;
+}
+#rottenTomatoes ul{
+  text-align: left;
+  font-size: 20px;
+}
+#rottenTomatoes li{
+  list-style-image: url('rottenTomatoesLogo.png');
+  padding-left: 20px;
+}
+#iMDB ul{
+  text-align: left;
+  font-size: 20px;
+}
+#iMDB li{
+  list-style-image: url('imdbLogo.png');
+  padding-left: 20px;
+}
+#metaCritic ul{
+  text-align: left;
+  font-size: 20px;
+}
+#metaCritic li{
+  list-style-image: url('metacriticLogo.png');
+  padding-left: 20px;
+}
+#rogerEbert ul{
+  text-align: left;
+  font-size: 20px;
+}
+#rogerEbert li{
+  list-style-image: url('rEbertLogo.png');
+  padding-left: 20px;
+}
+
+footer.copy {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+/*
+********************************************************************************************
+Contact page CSS
+********************************************************************************************
+*/
+
+.collapse {
+    margin-left: 1%;
+    color: black;
+    cursor: pointer;
+    padding: 1%;
+    width: 50%;
+    border-radius: 15px;
+    text-align: left;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.collapse:hover {
+    background-color: #ddd;
+    transition: .5s ease-in-out
+}
+
+.info {
+    margin-left: 1%;
+    border-radius: 15px;
+    width: 50%;
+    padding: 1%;
+    padding-left: 40px;
+    text-align: left;
+}
+
+details[open] summary ~ * {
+    animation: sweep-down 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+@keyframes sweep-down {
+    0% {
+        opacity: 0;
+        margin-top: -50px
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0%
+    }
+}
+
+@keyframes sweep-out {
+    0% {
+        opacity: 0;
+        margin-top: 0%
+    }
+    100% {
+        opacity: 1;
+        margin-top: -50px
+    }
+}
+
+#contactIntro {
+    border: 5px solid black;
+	border-radius:30px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 120%;
+}
+#contactIntro p {
+	
+  background-image: url('oulogo.png');
+  padding: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+	.btn-login, .btn-logout, .btn-Register, .btn-profile{
+	padding: 5px;
+	background: #333;
+	border: #1d1d1d 1px solid;
+	color: #f0f0f0;
+	font-size: 0.9em;
+	width: 150px;
+	border-radius: 60px;
+    cursor:pointer;
+			
+		}
+		.btn-login:hover, .btn-logout:hover, .btn-Register:hover, .btn-profile:hover{
+			
+background-color:#555;
+	transition: .5s ease-in-out;
+		}
+		#userlogged{
+			font-size:1.2em;
+		}
+
+
+
+
+
+
+#about{
+    text-align:center;
+    font-size: 18px;
+    border-bottom: solid;
+}
+.block{
+  float: left;
+  width: 50%;
+  height: 250px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  box-sizing: border-box;
+}
+#apiReferences p {
+    font-size: 16px;
+}
+#apiReferences ul{
+  padding: 0;
+  list-style: none;
+    font-size: 14px;
+}
+#axiosRef p {
+    font-size: 16px;
+}
+#axiosRef ul{
+  padding: 0;
+  list-style: none;
+    font-size: 14px;
+}
+/****************************************************************
+CSS for create create user page
+*****************************************************************/
+
+
+
+
