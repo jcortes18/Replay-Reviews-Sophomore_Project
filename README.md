@@ -1,26 +1,28 @@
 # Replay Reviews Sophomore Project
-
-## Table of contents
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
-
-## General info
-Write summary here!
+Replay Reviews is a website that can search for movies, tv shows, and video games and display their relevant information with options to view reviews from websites, such as RottenTomatoes and IMDB. Users who create an account are also able to leave comments on any movie, tv show, or video game. 
 	
 ## Technologies
 Project is created using:
-* HTML
-* CSS
+* HTML5
+* CSS3
 * JavaScript
-* PHP
+* PHP 5
 * Bootstrap 4
+* phpMySql
 	
 ## Setup
-To run this project, install it locally using npm:
+This website cannot be hosted on GitHub since Github only supports static websites. 
+To run this project, install:
 
-```
-$ cd ../lorem
-$ npm install
-$ npm start
-```
+* Entire project folder
+* XAMPP (if you dont already have software to host PHP websites on your localhost)
+* Text Editor
+
+## Sources
+* Open Movie Database (OMDB) API- http://www.omdbapi.com/
+* RAWG API - https://rawg.io/apidocs
+* AXIOS JavaScript Library - https://github.com/axios/axios
+
+## Screenshots
+
+
