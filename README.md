@@ -1,5 +1,5 @@
-# Replay Reviews Sophomore Project
-Replay Reviews is a website that can search for movies, tv shows, and video games and display their relevant information with options to view reviews from websites, such as RottenTomatoes and IMDB. Users who create an account are also able to leave comments on any movie, tv show, or video game. 
+# Replay Reviews Project
+Replay Reviews is a website that can search for movies, tv shows, and video games and display their relevant information with options to view reviews from different websites, such as RottenTomatoes, IMDB, MetaCritic, and RogerEbert. Users, who create an account, are able to view and enter comments on any movie, tv show, or video game of their choice.
 	
 ## Technologies
 Project is created using:
