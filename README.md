@@ -8,7 +8,7 @@ Project is created using:
 * JavaScript
 * PHP 5
 * Bootstrap 4
-* phpMySql
+* phpMyAdmin
 	
 ## Setup
 This website cannot be hosted on GitHub since Github only supports static websites. 
