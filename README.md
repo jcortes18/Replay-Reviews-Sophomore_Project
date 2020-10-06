@@ -25,4 +25,14 @@ To run this project, install:
 
 ## Screenshots
 
+### Home page with search results displayed:
 
+![homepage](screenshots/homepage.png "Homepage search screenshot")
+
+### Movie result page with relevant information about the movie, options to choose from different review sites to be relocated to, option to include comments, and past comments from different users displayed: 
+
+![movie results example](screenshots/movieResults1.png "Movie result screenshot")
+![movie results example](screenshots/movieResults2.png "Movie result screenshot")
+
+### Contact page displayed:
+![contact page screenshot](screenshots/Contact.png "Contact page screenshot")
